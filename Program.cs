@@ -24,39 +24,32 @@ namespace Desafio
             FileStream arquivo = new FileStream("answer.json", FileMode.OpenOrCreate);
             byte[] ab = Encoding.UTF8.GetBytes(JsonConvert.SerializeObject(ch));
             arquivo.Write(ab);
-            arquivo.Close();
 
 
             try
             {
-                FileStream answer = new FileStream("answer.json", FileMode.Open, FileAccess.ReadWrite);
-                StreamContent stcontent = new StreamContent(answer);
-                //MultipartFormDataContent form = new MultipartFormDataContent();
-                //form.Add(stcontent,"answer", "answer.json");
+                StreamContent stcontent = new StreamContent(arquivo);
                 
-                stcontent.Headers.ContentType = new System.Net.Http.Headers.MediaTypeHeaderValue("multipart/form-data");
-                stcontent.Headers.ContentDisposition = new System.Net.Http.Headers.ContentDispositionHeaderValue("form-data") { Name = "answer", FileName = "answer" };
+                MultipartFormDataContent form = new MultipartFormDataContent();
+                form.Add(stcontent, "answer", "answer.json");
                 
+                
+                //stcontent.Headers.ContentType = new System.Net.Http.Headers.MediaTypeHeaderValue("multipart/form-data");
+                //stcontent.Headers.ContentDisposition = new System.Net.Http.Headers.ContentDispositionHeaderValue("form-data") { Name = "answer", FileName = "answer" };
+                //form.Headers.ContentType = new System.Net.Http.Headers.MediaTypeHeaderValue("multipart/form-data");
+                ///form.Headers.ContentDisposition = new System.Net.Http.Headers.ContentDispositionHeaderValue("form-data");
                 
                 HttpClient client = new HttpClient();
-
-
-                var response = client.PostAsync(urlPost, stcontent);
+                
+                var response = client.PostAsync(urlPost, form);
                 Console.WriteLine($"StatusCode: {response.Result.StatusCode}");
-                answer.Close();
+                arquivo.Close();
+
             }
             catch (Exception e)
             {
-
                 Console.WriteLine($"Erro: {e.Message}");
             }
-            
-
-
-
-
-
-
         }
     }
 }

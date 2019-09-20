@@ -20,3 +20,14 @@ C:\Users\guilh\Documents\BSI\Desafio Codenation\DesafioCodenation\obj\Debug\netc
 C:\Users\guilh\Documents\BSI\Desafio Codenation\DesafioCodenation\obj\Debug\netcoreapp2.1\Desafio.AssemblyInfo.cs
 C:\Users\guilh\Documents\BSI\Desafio Codenation\DesafioCodenation\obj\Debug\netcoreapp2.1\Desafio.dll
 C:\Users\guilh\Documents\BSI\Desafio Codenation\DesafioCodenation\obj\Debug\netcoreapp2.1\Desafio.pdb
+C:\Users\guilh\Documents\BSI\Exercícios C#\Desafio Codenation\bin\Debug\netcoreapp2.1\Desafio.deps.json
+C:\Users\guilh\Documents\BSI\Exercícios C#\Desafio Codenation\bin\Debug\netcoreapp2.1\Desafio.runtimeconfig.json
+C:\Users\guilh\Documents\BSI\Exercícios C#\Desafio Codenation\bin\Debug\netcoreapp2.1\Desafio.runtimeconfig.dev.json
+C:\Users\guilh\Documents\BSI\Exercícios C#\Desafio Codenation\bin\Debug\netcoreapp2.1\Desafio.dll
+C:\Users\guilh\Documents\BSI\Exercícios C#\Desafio Codenation\bin\Debug\netcoreapp2.1\Desafio.pdb
+C:\Users\guilh\Documents\BSI\Exercícios C#\Desafio Codenation\obj\Debug\netcoreapp2.1\Desafio.csprojAssemblyReference.cache
+C:\Users\guilh\Documents\BSI\Exercícios C#\Desafio Codenation\obj\Debug\netcoreapp2.1\Desafio.csproj.CoreCompileInputs.cache
+C:\Users\guilh\Documents\BSI\Exercícios C#\Desafio Codenation\obj\Debug\netcoreapp2.1\Desafio.AssemblyInfoInputs.cache
+C:\Users\guilh\Documents\BSI\Exercícios C#\Desafio Codenation\obj\Debug\netcoreapp2.1\Desafio.AssemblyInfo.cs
+C:\Users\guilh\Documents\BSI\Exercícios C#\Desafio Codenation\obj\Debug\netcoreapp2.1\Desafio.dll
+C:\Users\guilh\Documents\BSI\Exercícios C#\Desafio Codenation\obj\Debug\netcoreapp2.1\Desafio.pdb

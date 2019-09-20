@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\guilh\\Documents\\BSI\\Desafio Codenation\\DesafioCodenation\\Desafio.csproj": {}
+    "C:\\Users\\guilh\\Documents\\BSI\\Exercícios C#\\Desafio Codenation\\Desafio.csproj": {}
   },
   "projects": {
-    "C:\\Users\\guilh\\Documents\\BSI\\Desafio Codenation\\DesafioCodenation\\Desafio.csproj": {
+    "C:\\Users\\guilh\\Documents\\BSI\\Exercícios C#\\Desafio Codenation\\Desafio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\guilh\\Documents\\BSI\\Desafio Codenation\\DesafioCodenation\\Desafio.csproj",
+        "projectUniqueName": "C:\\Users\\guilh\\Documents\\BSI\\Exercícios C#\\Desafio Codenation\\Desafio.csproj",
         "projectName": "Desafio",
-        "projectPath": "C:\\Users\\guilh\\Documents\\BSI\\Desafio Codenation\\DesafioCodenation\\Desafio.csproj",
+        "projectPath": "C:\\Users\\guilh\\Documents\\BSI\\Exercícios C#\\Desafio Codenation\\Desafio.csproj",
         "packagesPath": "C:\\Users\\guilh\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\guilh\\Documents\\BSI\\Desafio Codenation\\DesafioCodenation\\obj\\",
+        "outputPath": "C:\\Users\\guilh\\Documents\\BSI\\Exercícios C#\\Desafio Codenation\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
