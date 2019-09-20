@@ -76,7 +76,6 @@ namespace Desafio
                     stb.Append('.');
                 if (item != ' ' && item != '.')
                     stb.Append(DecryptLetter(item, casas));
-
             }
             return stb.ToString();
         }
@@ -91,8 +90,6 @@ namespace Desafio
                 result += item.ToString("X2");
             }
             return result;
-
-
         }
     }
 }

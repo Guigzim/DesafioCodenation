@@ -735,11 +735,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\guilh\\Desktop\\Desafio\\Desafio.csproj",
+      "projectUniqueName": "C:\\Users\\guilh\\Documents\\BSI\\Desafio Codenation\\DesafioCodenation\\Desafio.csproj",
       "projectName": "Desafio",
-      "projectPath": "C:\\Users\\guilh\\Desktop\\Desafio\\Desafio.csproj",
+      "projectPath": "C:\\Users\\guilh\\Documents\\BSI\\Desafio Codenation\\DesafioCodenation\\Desafio.csproj",
       "packagesPath": "C:\\Users\\guilh\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\guilh\\Desktop\\Desafio\\obj\\",
+      "outputPath": "C:\\Users\\guilh\\Documents\\BSI\\Desafio Codenation\\DesafioCodenation\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",

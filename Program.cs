@@ -1,5 +1,9 @@
 ﻿using System;
 using System.IO;
+using System.Text;
+using Newtonsoft.Json;
+using System.Net;
+using System.Net.Http;
 
 namespace Desafio
 {
@@ -16,10 +20,41 @@ namespace Desafio
             ch.resumo_criptografico = ch.ToSHA1(ch.decifrado);
             Console.WriteLine(ch.decifrado);
 
-            FileStream file = new FileStream("answer.json", FileMode.OpenOrCreate);
+            FileStream arquivo = new FileStream("answer.json", FileMode.OpenOrCreate);
+            byte[] ab = Encoding.UTF8.GetBytes(JsonConvert.SerializeObject(ch));
+            arquivo.Write(ab);
+            arquivo.Close();
+
+
+            try
+            {
+                FileStream answer = new FileStream("answer.json", FileMode.Open, FileAccess.ReadWrite);
+                StreamContent stcontent = new StreamContent(answer);
+                //MultipartFormDataContent form = new MultipartFormDataContent();
+                //form.Add(stcontent,"answer", "answer.json");
+                
+                stcontent.Headers.ContentType = new System.Net.Http.Headers.MediaTypeHeaderValue("multipart/form-data");
+                stcontent.Headers.ContentDisposition = new System.Net.Http.Headers.ContentDispositionHeaderValue("form-data") { Name = "answer", FileName = "answer" };
+                
+                
+                HttpClient client = new HttpClient();
+
+
+                var response = client.PostAsync(urlPost, stcontent);
+                Console.WriteLine($"StatusCode: {response.Result.StatusCode}");
+                answer.Close();
+            }
+            catch (Exception e)
+            {
+
+                Console.WriteLine($"Erro: {e.Message}");
+            }
             
-            
-            
+
+
+
+
+
 
         }
     }

@@ -67,9 +67,10 @@ arquivo.write(json.dumps(object))
 #fecha o arquivo
 arquivo.close()
 #post para upar o arquvio na API
-##post = requests.post('https://api.codenation.dev/v1/challenge/dev-ps/submit-solution?token={}'.format(token), files={'arquivo': open('answer.json', 'rb')})
+post = requests.post('https://api.codenation.dev/v1/challenge/dev-ps/submit-solution?token={}'.format(token), files={'answer': open('answer.json', 'rb')})
 #imprime o status_code da requisicao | se der 200 é pq deu boa
-##print(post.status_code)
+print(post.status_code)
+print(post.text);
 
 
 
