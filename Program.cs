@@ -24,15 +24,14 @@ namespace Desafio
             FileStream arquivo = new FileStream("answer.json", FileMode.OpenOrCreate);
             byte[] ab = Encoding.UTF8.GetBytes(JsonConvert.SerializeObject(ch));
             arquivo.Write(ab);
-
-
+            arquivo.Close();
             try
             {
-                StreamContent stcontent = new StreamContent(arquivo);
+                FileStream st = new FileStream("answer.json", FileMode.OpenOrCreate, FileAccess.ReadWrite);
+                StreamContent stcontent = new StreamContent(st);
                 
                 MultipartFormDataContent form = new MultipartFormDataContent();
-                form.Add(stcontent, "answer", "answer.json");
-                
+                form.Add(stcontent, "answer");
                 
                 //stcontent.Headers.ContentType = new System.Net.Http.Headers.MediaTypeHeaderValue("multipart/form-data");
                 //stcontent.Headers.ContentDisposition = new System.Net.Http.Headers.ContentDispositionHeaderValue("form-data") { Name = "answer", FileName = "answer" };
@@ -43,8 +42,6 @@ namespace Desafio
                 
                 var response = client.PostAsync(urlPost, form);
                 Console.WriteLine($"StatusCode: {response.Result.StatusCode}");
-                arquivo.Close();
-
             }
             catch (Exception e)
             {
